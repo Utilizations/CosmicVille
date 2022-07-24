@@ -12,7 +12,7 @@ module.exports = {
      run: async(client, interaction, container) => {
         const embed = new MessageEmbed()
         .setTitle("Post a Punishment Log.")
-        .description("If you have just punished a player in-game please fill out the form by clicking the button bellow.")
+        .setDescription("If you have just punished a player in-game please fill out the form by clicking the button bellow.")
 
         const row = new MessageActionRow().addCompenents(
             new discord.MessageButton()
