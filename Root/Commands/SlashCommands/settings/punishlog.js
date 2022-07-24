@@ -1,4 +1,5 @@
-const { Client, CommandInteraction, MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
+const { Client, CommandInteraction, MessageEmbed } = require("discord.js");
+const discord = require("discord.js")
 const config = require("../../../../Config");
 
 module.exports = {
@@ -14,8 +15,8 @@ module.exports = {
         .setTitle("Post a Punishment Log.")
         .setDescription("If you have just punished a player in-game please fill out the form by clicking the button bellow.")
 
-        const row = new MessageActionRow().addComponents(
-            new MessageButton()
+        const row = new discord.MessageActionRow().addComponents(
+            new discord.MessageButton()
             .setCustomId('punishment')
             .setLabel('Post a punishment.')
             .setStyle('DANGER')
