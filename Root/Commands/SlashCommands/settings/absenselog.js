@@ -1,4 +1,4 @@
-const { Client, CommandInteraction, MessageEmbed, MessageActionRow, discord} = require("discord.js");
+const { Client, CommandInteraction, MessageEmbed, MessageActionRow, MessageButton} = require("discord.js");
 const config = require("../../../../Config");
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
         .setDescription("If you are not going to be online for more 2 days or more, please click the button bellow and fill out the form.")
 
         const row = new MessageActionRow().addCompenents(
-            new discord.MessageButton()
+            new MessageButton()
             .setCustomId('absence')
             .setLabel('Post an absence.')
             .setStyle('DANGER')

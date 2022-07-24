@@ -1,4 +1,4 @@
-const { Client, CommandInteraction, MessageEmbed, MessageActionRow, discord} = require("discord.js");
+const { Client, CommandInteraction, MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 const config = require("../../../../Config");
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
         .setDescription("If you have just punished a player in-game please fill out the form by clicking the button bellow.")
 
         const row = new MessageActionRow().addCompenents(
-            new discord.MessageButton()
+            new MessageButton()
             .setCustomId('punishment')
             .setLabel('Post a punishment.')
             .setStyle('DANGER')

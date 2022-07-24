@@ -1,4 +1,4 @@
-const { Client, CommandInteraction, MessageEmbed, MessageActionRow, discord} = require("discord.js");
+const { Client, CommandInteraction, MessageEmbed, MessageActionRow, MessageButton} = require("discord.js");
 const config = require("../../../../Config");
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
         .setDescription("Upon joining CosmicVille staff we request you to fill out this form so we have your detail on hand. Please fill out the form by clicking the button bellow.")
 
         const row = new MessageActionRow().addCompenents(
-            new discord.MessageButton()
+            new MessageButton()
             .setCustomId('info')
             .setLabel('Post Info.')
             .setStyle('SUCCESS')
