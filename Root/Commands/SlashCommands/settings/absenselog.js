@@ -14,7 +14,7 @@ module.exports = {
         .setTitle("Post an absence.")
         .setDescription("If you are not going to be online for more 2 days or more, please click the button bellow and fill out the form.")
 
-        const row = new MessageActionRow().addCompenents(
+        const row = new MessageActionRow().addComponents(
             new MessageButton()
             .setCustomId('absence')
             .setLabel('Post an absence.')
