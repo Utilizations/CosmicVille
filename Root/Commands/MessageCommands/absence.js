@@ -16,7 +16,7 @@ module.exports = {
             .setLabel('Post an absence.')
             .setStyle('DANGER')
         )
-         message.channel.send({embeds: [embed], componenets: [row]})
+         message.channel.send({embeds: [embed], components: [row]})
 
     }
 }
