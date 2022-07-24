@@ -14,7 +14,7 @@ module.exports = {
         .setTitle("Post a Punishment Log.")
         .setDescription("If you have just punished a player in-game please fill out the form by clicking the button bellow.")
 
-        const row = new MessageActionRow().addCompenents(
+        const row = new MessageActionRow().addComponents(
             new MessageButton()
             .setCustomId('punishment')
             .setLabel('Post a punishment.')
